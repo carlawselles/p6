@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --azul:#00649C;
+            --beige: #B4AC84;
+            --negro:#000000;
+            --blanco-bg:#F5F5F5;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            font-family: 'Lato', sans-serif;
+            color: var(--beige);
+            font-size: 0.7em;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding: 1.3em 0 0 0;
+        }
+        h2{
+            font-family: 'Lato', sans-serif;
+            color: var(--azul);
+            font-size: 1.2em;
+            font-weight: 700;
+            padding: 0.5em 0 0 0;
+        }
+        p{
+            font-family: 'Lato', sans-serif;  
+            color: var(--negro);
+            font-size: 0.8em;
+            font-weight: 400;
+            padding: 0.8em 0 0 0;
+        }
+        .gallery{
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            background: #F5F5F5;
+        }
+        .card{
+            flex-basis: 18%;
+            transition: flex-grow 1s;
+            border-radius: 0.3em;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            background: white;
+        }
+        .card:nth-child(3){
+            flex-basis: 44%;
+            flex-grow: 1;
+        }
+        .card:nth-child(4){
+            flex-basis: 43%;
+            flex-grow: 1;
+        }
+        .card_img{
+            width: 100%;
+            height: 270px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card:hover{
+            flex-grow: 1;
+            box-shadow: 0em 0em 0.5em var(--beige);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Kano Sansetsu</h1>
+                    <h2>Old Plum</h2>
+                    <p>The massive black trunk of an ancient plum tree with bending, twisting branches spans nearly sixteen feet across four sliding panels. The reptilian old tree sprouts blossoms, which convey the atmosphere of a cold early spring morning and symbolize birth and renewal.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Habiballah of Sava</h1>
+                    <h2>A Stallion</h2>
+                    <p>Studies such as this superb example of a richly caparisoned royal horse of Arabian stock, with a small head and an elegant swan's neck, abound in fifteenth-, sixteenth-, and seventeenth-century Iranian, Turkish, and Indian paintings and drawings.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Habiballah of Sava, Farid al-Din `Attar</h1>
+                    <h2>"The Concourse of the Birds", Folio 11r from a Mantiq al-Tayr (Language of the Birds)</h2>
+                    <p>The illustration on this folio depicts a scene from a mystical poem, Mantiq al-tair (Language of the Birds), written by a twelfth-century Iranian, Farid al-Din 'Attar. The birds, which symbolize individual souls in search of the simurgh (a mystical bird representing ultimate spiritual unity), are assembled in an idyllic landscape to begin their pilgrimage under the leadership of a hoopoe (perched on a rock at center right).</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Jean-Baptiste Greuze</h1>
+                    <h2>Broken Eggs</h2>
+                    <p>In moralizing genre subjects such as this, Greuze brilliantly formulated a solution to the impasse that arcane history subjects posed to artists and the public. At the Salon of 1757, a critic even declared that the pose of this young servant girl, whose loss of virginity is symbolized by the broken eggs, was worthy of a history painter.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Carleton E. Watkins</h1>
+                    <h2>View on the Columbia, Cascades</h2>
+                    <p>Beginning in the 1850s, photographers found a way to achieve the clarity of daguerreotypes without giving up the reproducibility inherent in William Henry Fox Talbot's negative/positive photographic process: they replaced the paper negative with glass, which they coated with a thin layer of wet photosensitive collodion.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>William Trost Richards</h1>
+                    <h2>Lake Squam from Red Hill</h2>
+                    <p>Among the earliest contributors to the annual exhibitions of the American Society of Painters in Water Color, the Philadelphian Richards contributed significantly to raising the profile of the medium in the United States. The artist successfully wedded topographical precision and authority of design to a marvelous sense of light and atmospheric breadth.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
